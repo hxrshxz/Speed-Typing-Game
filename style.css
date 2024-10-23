@@ -1,0 +1,89 @@
+.start-button {
+    display: flex;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    color: #ff6347;
+    background-color: #222;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 11rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    border: 2px solid #ff6347;
+    cursor: pointer;
+  }
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222; /* Dark background */
+  padding: 3rem;
+  border: 2px solid #ff6347;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+}
+
+.typing-area {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 25vw;
+  height: 20vh;
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    font-family: monospace;
+    width: 25vw;
+  color: white; /* Tomato color */
+  margin-bottom: 1.5rem;
+}
+.timer {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #ff6347; /* Tomato color */
+  background-color: #222; /* Dark background */
+  padding: 1rem 2rem; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  width: 100px; /* Fixed width to center the number */
+  margin: 0 auto; /* Center it horizontally */
+  margin-bottom: 1rem;
+  border: 2px solid #ff6347; /* Border matching text color */
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    50% {
+    opacity: 0;
+  }
+}
+
+.active {
+  color: greenyellow;
+}
+
+.hide {
+  display: none;
+}
